@@ -22,7 +22,6 @@ Email: ${formData.email}
 Phone: ${formData.phone}
 Message: ${formData.message}`;
 
-    // WhatsApp Redirect
     const whatsappURL = `https://wa.me/917875256356?text=${encodeURIComponent(
       message
     )}`;
@@ -34,7 +33,7 @@ Message: ${formData.message}`;
 
   return (
     <div className="bg-white text-gray-800">
-      
+
       {/* Hero Banner */}
       <div
         className="relative bg-cover bg-center h-64 flex items-center justify-center"
@@ -52,35 +51,63 @@ Message: ${formData.message}`;
         <div className="space-y-8">
           <h3 className="text-3xl font-bold text-red-900">Contact the Temple</h3>
 
-          <div className="space-y-4">
+          <div className="space-y-6">
 
-            <div className="flex items-center gap-4">
-              <FaMapMarkerAlt className="text-red-500 text-xl" />
-              <p className="text-gray-700">
-                Shree Khandoba Mandir,<br />
-                Andur Village, Tuljapur Taluka,<br />
-                Dharashiv (Osmanabad), Maharashtra
-              </p>
+            {/* Address + Google Business */}
+            <div className="flex items-start gap-4">
+              <FaMapMarkerAlt className="text-red-500 text-xl mt-1" />
+              <div>
+                <p className="text-gray-700">
+                  Shree Khandoba Mandir,<br />
+                  Andur Village, Tuljapur Taluka,<br />
+                  Dharashiv (Osmanabad), Maharashtra
+                </p>
+
+                <a
+                  href="https://share.google/SwO5GO7ajJSKijdkz"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 mt-3 text-red-600 font-semibold hover:underline"
+                >
+                  <FaMapMarkerAlt />
+                  View on Google Map
+                </a>
+              </div>
             </div>
 
+            {/* Phone */}
             <div className="flex items-center gap-4">
               <FaPhoneAlt className="text-red-500 text-xl" />
               <p className="text-gray-700">+91 78752 56356</p>
             </div>
 
+            {/* Email */}
             <div className="flex items-center gap-4">
               <FaEnvelope className="text-red-500 text-xl" />
               <p className="text-gray-700">diabhimokashe767@gmail.com</p>
             </div>
+
+            {/* Google Map Button */}
+            <a
+              href="https://share.google/SwO5GO7ajJSKijdkz"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-3 bg-red-600 text-white px-6 py-3 rounded-full font-semibold shadow hover:bg-red-700 transition"
+            >
+              <FaMapMarkerAlt className="text-xl" />
+              View Temple on Google Map
+            </a>
+
           </div>
         </div>
 
         {/* RIGHT SIDE – Form */}
         <div className="bg-red-50 p-8 rounded-2xl shadow-xl">
-          <h4 className="text-2xl font-semibold text-red-700 mb-6">Send a Message</h4>
+          <h4 className="text-2xl font-semibold text-red-700 mb-6">
+            Send a Message
+          </h4>
 
           <form onSubmit={handleSubmit} className="space-y-4">
-            
             <input
               type="text"
               name="name"
@@ -144,3 +171,4 @@ Message: ${formData.message}`;
 };
 
 export default Contact;
+

@@ -13,8 +13,8 @@ const copy = {
     cta1: "पूजा सेवा पाहा",
     cta2: "आमच्याशी संपर्क करा",
     stats1: "1500+ कार्यक्रम",
-    stats2: "1200+ भक्त",
-    stats3: "वर्षांचे परंपरा 20+",
+    stats2: "70000+ भक्त",
+    stats3: "वर्षांचे परंपरा 30+",
   },
   hi: {
     heroTitle: "श्री खंडोबा — अणदूर व नळदुर्ग",
@@ -24,8 +24,8 @@ const copy = {
     cta1: "पूजा सेवाएँ देखें",
     cta2: "संपर्क करें",
     stats1: "1500+ आयोजन",
-    stats2: "1200+ भक्त",
-    stats3: "20+ वर्षों की परंपरा",
+    stats2: "70000+ भक्त",
+    stats3: "30+ वर्षों की परंपरा",
   },
   en: {
     heroTitle: "Shri Khandoba — Anadur & Naldurg",
@@ -35,8 +35,8 @@ const copy = {
     cta1: "View Pooja Services",
     cta2: "Contact Us",
     stats1: "1500+ events",
-    stats2: "1200+ devotees",
-    stats3: "20+ years of tradition",
+    stats2: "70000+ devotees",
+    stats3: "30+ years of tradition",
   }
 };
 
@@ -107,9 +107,9 @@ const AboutPage = () => {
       <div className="mt-24 bg-gradient-to-r from-red-50 via-yellow-50 to-red-50 py-16 px-6 md:px-20 text-center rounded-t-3xl shadow-inner">
         <h3 className="text-3xl font-bold text-red-900 mb-10">{lang === "mr" ? "आमची कामगिरी" : lang === "hi" ? "हमारी उपलब्धियाँ" : "Our Achievements"}</h3>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-10 max-w-5xl mx-auto">
-          <div><p className="text-5xl font-extrabold text-red-700">1500+</p><p className="text-gray-700 mt-2">{lang === "mr" ? "घटनांचा आयोजन" : lang === "hi" ? "आयोजनों" : "Events Catered"}</p></div>
-          <div><p className="text-5xl font-extrabold text-red-700">1200+</p><p className="text-gray-700 mt-2">{lang === "mr" ? "आनंदी भक्त" : lang === "hi" ? "खुश भक्त" : "Happy Devotees"}</p></div>
-          <div><p className="text-5xl font-extrabold text-red-700">20+</p><p className="text-gray-700 mt-2">{lang === "mr" ? "परंपरेचे वर्ष" : lang === "hi" ? "वर्षों की परंपरा" : "Years of Tradition"}</p></div>
+          <div><p className="text-5xl font-extrabold text-red-700">15000+</p><p className="text-gray-700 mt-2">{lang === "mr" ? "घटनांचा आयोजन" : lang === "hi" ? "आयोजनों" : "Events Catered"}</p></div>
+          <div><p className="text-5xl font-extrabold text-red-700">70000+</p><p className="text-gray-700 mt-2">{lang === "mr" ? "आनंदी भक्त" : lang === "hi" ? "खुश भक्त" : "Happy Devotees"}</p></div>
+          <div><p className="text-5xl font-extrabold text-red-700">300+</p><p className="text-gray-700 mt-2">{lang === "mr" ? "परंपरेचे वर्ष" : lang === "hi" ? "वर्षों की परंपरा" : "Years of Tradition"}</p></div>
         </div>
       </div>
     </div>
